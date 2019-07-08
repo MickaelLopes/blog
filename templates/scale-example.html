@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset= "utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css"
+    <script type="text/javascript" src ="js/anim/lib/anime.es.js"></script>
+</head>
+<body>
+<header>
+<svg width="100%", height="100%">
+    <defs>
+        <linearGradient id="scaleColor" x1="0%" y1="0%" x2="100%" y2 = "800">
+            <stop offset =0% stop-color ="black"/>
+            <stop offset ="100%" stop-color="white"/>
+        </linearGradient>
+        <polygon id="scale" class="hex" points="40,17 30,0 10,0 0,17 10,34 30,34"/>
+        <pattern id ="scale1" x="0" y="0" width="62" height="35" patternUnits="userSpaceOnUse">
+            <use href="#scale" fill="green"/>
+        </pattern>
+        <pattern id ="scale2" x="0" y="0" width="62" height="35" patternUnits="userSpaceOnUse" patternTransform="translate(31 18)">
+            <use href="#scale" fill="green"/>
+        </pattern>
+    </defs>
+
+    <rect fill="url(#scale1)" width="100%" height="800"/>
+
+    <rect fill="url(#scale2)" width="100%" height="800"/>
+</header>
+
+</svg>
+</body>
+</html>
